@@ -72,7 +72,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	n = binary_tree_size(tree);
 	h = binary_tree_height(tree);
-	p = exp_power(h + 1) - 1;
+	p = get_power(h + 1) - 1;
 
 	return (n == p);
 }
